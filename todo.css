@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 18px;
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+button, input {
+  border: 1px solid #ddd;
+}
+
+button, input[type="text"] {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-right: .3rem;
+}
+
+input[type=checkbox]:checked ~ label {
+  text-decoration: line-through;
+}
+
+div {
+  margin: .6rem 0;
+}
+
+.items {
+  margin: 0;
+}
+
+.add-item {
+  margin-bottom: 1.7rem;
+}
+
+
+
+
+
+
+
