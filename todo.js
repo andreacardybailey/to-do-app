@@ -35,7 +35,7 @@
         <label for="${index}">${item}</label>
       </div>
     `;
-  }
+  };
 
   /**
    * Generate the HTML for the list of todos
@@ -51,7 +51,7 @@
     // assumes sanitized data in 'store'
     itemsEl.innerHTML = toDoHtml;
     return itemsEl;
-  }
+  };
 
   /**
    * Render todo list HTML to the page
@@ -60,7 +60,7 @@
     let oldItems = qs('.items');
     let newItems = generateToDos();
     qs('#to-do-list').replaceChild( newItems, oldItems );
-  }
+  };
 
   /**
    * Handle form submission
@@ -79,7 +79,7 @@
         alert('Please enter valid a to do item!')
       }
     });
-  }
+  };
 
   /**
    * Add todo item to the store
@@ -100,7 +100,7 @@
         renderList();
       }
     }, false);
-  }
+  };
 
   /**
    * Handles the todo list
@@ -109,7 +109,7 @@
     renderList();
     handleSubmit();
     handleItemChecked();
-  }
+  };
 
   handleToDoList();
 }
